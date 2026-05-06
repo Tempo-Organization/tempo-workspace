@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+/tempo-binary-tool-manager
+/tempo-binary-tools
+/tempo-core
+/tempo-settings
+/tempo-cli
+uv.lock
+pyproject.toml
