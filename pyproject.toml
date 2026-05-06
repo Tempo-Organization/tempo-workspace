@@ -2,26 +2,3 @@
 name = "tempo-workspace"
 version = "0.0.0"
 requires-python = ">=3.12"
-dependencies = [
-    "tempo-binary-tool-manager",
-    "tempo-binary-tools",
-    "tempo-cli",
-    "tempo-core",
-    "tempo-settings",
-]
-
-[tool.uv.workspace]
-members = [
-    "tempo-binary-tool-manager",
-    "tempo-settings",
-    "tempo-binary-tools",
-    "tempo-core",
-    "tempo-cli",
-]
-
-[tool.uv.sources]
-tempo-binary-tool-manager = { workspace = true }
-tempo-settings = { workspace = true }
-tempo-binary-tools = { workspace = true }
-tempo-core = { workspace = true }
-tempo-cli = { workspace = true }
