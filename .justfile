@@ -37,3 +37,7 @@ setup:
   uv --directory ./tempo-cli remove tempo-settings tempo-binary-tool-manager tempo-binary-tools tempo-core
   uv add --workspace ./tempo-binary-tool-manager ./tempo-settings ./tempo-binary-tools ./tempo-core ./tempo-cli
   uv sync
+
+lint:
+  uv run ruff check tempo-core/src tempo-core/tests tempo-cli/src tempo-settings/src tempo-binary-tools/src tempo-binary-tool-manager/src --fix
+  uv run ty check tempo-core/src tempo-core/tests tempo-cli/src tempo-settings/src tempo-binary-tools/src tempo-binary-tool-manager/src --fix
